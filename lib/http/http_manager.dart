@@ -12,7 +12,7 @@ class HttpManager {
           'token': ''
         }
       );
-      _dio = Dio(options);
+      _dio = Dio();
       _dio.interceptors.add(HttpInterceptors());
     }
   }
