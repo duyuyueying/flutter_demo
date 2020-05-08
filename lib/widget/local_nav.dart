@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_trip/model/common_model.dart';
+import 'package:flutter_trip/widget/webview.dart';
 
 class LocalNav extends StatelessWidget {
   final List<CommonModel> localNavList;
@@ -38,7 +39,11 @@ class LocalNav extends StatelessWidget {
         Text(model.title, style: TextStyle(fontSize: 12))
       ],),
       onTap: (){
-
+        Navigator.push(context, 
+          MaterialPageRoute(builder: (context)=>
+            Webview(url: model.url, statusBarColor: model.statusBarColor, hideAppBar: model.hideAppBar,)
+          )
+        );
       },
     );
   }

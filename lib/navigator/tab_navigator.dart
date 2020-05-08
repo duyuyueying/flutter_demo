@@ -11,7 +11,7 @@ class TabNavgator extends StatefulWidget {
 
 class _TabNavgatorState extends State<TabNavgator> {
   int _currIndex = 0;
-  final PageController _controller = PageController(initialPage:1);
+  final PageController _controller = PageController(initialPage:0);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
