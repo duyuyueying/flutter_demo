@@ -13,3 +13,5 @@ plugins.each { name, path ->
     include ":$name"
     project(":$name").projectDir = pluginDirectory
 }
+include ':asr_plugin'
+include ':plugin_asr1'
